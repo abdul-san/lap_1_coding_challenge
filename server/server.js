@@ -18,6 +18,11 @@ app.get("/cars", (req, res) => {
     res.status(200).send(cars)
 })
 
-app.get("/cars/:id", (req, res) => {
-    res.status(200).send(cars)
+app.get("/cars/random", function(req, res) {
+    res.type("text/plain")
+    let rn = Math.floor(Math.random() * cars.length+1);
+    res.send(cars[rn])
+
+    
 })
+// for every car in cars (.length), return a random index
