@@ -5,9 +5,19 @@ const app = express();
 app.use(express.json())
 // app.use(cors());
 
-const port = 3000;
+const port = 5007;
 app.listen(port, () => console.log(`Listening on part ${port}`))
 
-app.get("/", (req, res) => {
-    res.status(200).send()
+let cars = [
+    {id : 1, "car": "Audi"},
+    {id : 2, "car": "Porsche"},
+    {id : 3, "car": "Volkswagen"},
+    {id : 4, "car": "Bentley"}]
+
+app.get("/cars", (req, res) => {
+    res.status(200).send(cars)
+})
+
+app.get("/cars/:id", (req, res) => {
+    res.status(200).send(cars)
 })
