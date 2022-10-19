@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fetch.js" defer></script> 
+    <link rel="stylesheet" href="style.css">
     <title>Google</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="nav_bar">
+        <div class="nav_bar_left">
             <ul>
                 <li class="about"><a href="#">About</a></li>
-                <li class="Store"><a href="#">Store</a></li>
+                <li class="store"><a href="#">Store</a></li>
+            </ul>
+        </div>
+        <div class="nav_bar_right">
+            <ul>
                 <li class="gmail"><a href="#">Gmail</a></li>
                 <li class="images"><a href="#">Images</a></li>
                 <li class="googleApps"><a href="#">Google Apps</a></li>
@@ -23,12 +29,13 @@
             <div class="searchbox">
                 <input type="text">
             </div>
-            <form>
-                <input type="submit" id="lucky" value="I'm feeling Lucky" />
-                <input type="submit" value="search" />
-            </form>
+        
         </main>
-
+        <form>
+            <input type="submit" id="lucky" value="I'm feeling Lucky" href="cars.html"/>
+            <input type="submit" id= "search" value="search" />
+        </form>
+        <p id="demo"></p>
     </div>
 </body>
 </html>

@@ -1,0 +1,103 @@
+body {
+	font-size:13px;
+	font-family:Arial, sans-serif;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+/*=============================================
+=                  NAVIGATION                 =
+=============================================*/
+
+.nav_bar_right {
+	display:block;
+	float:right;
+}
+.nav_bar_left {
+	display:block;
+	float:left;
+}
+
+.nav_bar_left li {
+	display:inline-block;
+	padding-left:15px;
+}
+
+.nav_bar_right li {
+	display:inline-block;
+	padding-right:15px;
+}
+
+main {
+	display:block;
+	width:100%;
+	text-align:center;
+}
+
+main{
+	width:100%;
+	padding-top:200px;
+	padding-bottom:25px;
+}
+
+main {
+	display:block;
+	width: 700px;
+	height: 95px;
+	margin:auto;
+}
+
+.searchbox {
+	width: 592px;
+	height: 27px;
+	margin:auto;
+	position:relative;
+}
+
+.searchbox input {
+	width:570px;
+	height:100%;
+	border:1px solid #DDDDDD;
+	padding: 0 10px;
+	position:relative;
+	float:left;
+	z-index:10;
+}
+
+
+
+.searchbox input:hover {
+	border:1px solid #AEAEAE;
+}
+
+
+form{
+    display:block;
+	width: 269px;
+	height: 95px;
+	margin:auto;
+}
+
+
+img{
+    display:block;
+	width: 269px;
+	height: 90px;
+	margin:auto;
+}
+
+
+
+
+
+
+.feeling_lucky {
+	width:105px;
+}
